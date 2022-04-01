@@ -5,13 +5,25 @@ function handleError(err) {
   throw new Error(chalk.red(err.code, "There is no file on the path"));
 }
 
-function getFile(filePath) {
-  const encoding = "utf-8";
-  fs.promises
-    .readFile(filePath, encoding)
-    .then((text) => console.log(chalk.green(text)))
-    .catch((err) => handleError(err));
+async function getFile(filePath) {
+  try {
+    const encoding = "utf-8";
+    const text = await fs.promises.readFile(filePath, encoding);
+    console.log(chalk.green(text));
+  } catch (err) {
+    handleError(err);
+  } finally {
+    console.log(chalk.yellow("Job done!"));
+  }
 }
+
+// function getFile(filePath) {
+//   const encoding = "utf-8";
+//   fs.promises
+//     .readFile(filePath, encoding)
+//     .then((text) => console.log(chalk.green(text)))
+//     .catch((err) => handleError(err));
+// }
 
 // function getFile(filePath) {
 //   const encoding = "utf-8";
