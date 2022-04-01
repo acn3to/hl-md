@@ -7,13 +7,21 @@ function handleError(err) {
 
 function getFile(filePath) {
   const encoding = "utf-8";
-  fs.readFile(filePath, encoding, (err, data) => {
-    if (err) {
-      handleError(err);
-    } else {
-      console.log(chalk.green(data));
-    }
-  });
+  fs.promises
+    .readFile(filePath, encoding)
+    .then((text) => console.log(chalk.green(text)))
+    .catch((err) => handleError(err));
 }
+
+// function getFile(filePath) {
+//   const encoding = "utf-8";
+//   fs.readFile(filePath, encoding, (err, data) => {
+//     if (err) {
+//       handleError(err);
+//     } else {
+//       console.log(chalk.green(data));
+//     }
+//   });
+// }
 
 getFile("./files/markdown-syntax.md");
