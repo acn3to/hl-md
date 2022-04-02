@@ -16,7 +16,7 @@ function handleError(err) {
   throw new Error(chalk.red(err.code, "There is no file on the path"));
 }
 
-async function getFile(filePath) {
+export default async function getFile(filePath) {
   try {
     const encoding = "utf-8";
     const text = await fs.promises.readFile(filePath, encoding);
@@ -28,4 +28,4 @@ async function getFile(filePath) {
   }
 }
 
-getFile("./files/markdown-syntax.md");
+// getFile("./files/markdown-syntax.md");
