@@ -1,13 +1,21 @@
 import fetch from "node-fetch";
 
+function handleError(err) {
+  throw new Error(err.message);
+}
+
 async function checkStatus(urlArray) {
-  const statusArray = await Promise.all(
-    urlArray.map(async (url) => {
-      const res = await fetch(url);
-      return res.status;
-    })
-  );
-  return statusArray;
+  try {
+    const statusArray = await Promise.all(
+      urlArray.map(async (url) => {
+        const res = await fetch(url);
+        return res.status;
+      })
+    );
+    return statusArray;
+  } catch (err) {
+    handleError(err);
+  }
 }
 
 function createUrlsArray(linksArray) {
@@ -17,5 +25,9 @@ function createUrlsArray(linksArray) {
 export default async function validateUrl(linksArray) {
   const links = createUrlsArray(linksArray);
   const linksStatus = await checkStatus(links);
-  return linksStatus;
+  const result = linksArray.map((object, index) => ({
+    ...object,
+    status: linksStatus[index],
+  }));
+  return result;
 }
