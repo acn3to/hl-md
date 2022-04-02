@@ -9,7 +9,7 @@ function getLink(text) {
   while ((temp = regex.exec(text)) != null) {
     resultsArray.push({ [temp[1]]: temp[2] });
   }
-  return resultsArray;
+  return resultsArray.length === 0 ? "There is no links" : resultsArray;
 }
 
 function handleError(err) {
@@ -20,12 +20,10 @@ export default async function getFile(filePath) {
   try {
     const encoding = "utf-8";
     const text = await fs.promises.readFile(filePath, encoding);
-    console.log(getLink(text));
+    return getLink(text);
   } catch (err) {
     handleError(err);
   } finally {
     console.log(chalk.yellow("Job done!"));
   }
 }
-
-// getFile("./files/markdown-syntax.md");
