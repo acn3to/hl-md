@@ -21,7 +21,7 @@ npm init
 Installation is done using the npm install command:
 
 ```sh
-npm install -g link-md
+npm install -g hlink-md
 ```
 
 ## Demo
@@ -43,7 +43,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, velit reiciendis
 And run:
 
 ```sh
-link-md ./"filePath"/"file.md"
+hlink-md ./"filePath"/"file.md"
 ```
 
 It will return on you terminal:
@@ -59,7 +59,7 @@ Links list: [
 If you add "validate" at the end, like this:
 
 ```sh
-link-md ./"filePath"/"file.md" validate
+hlink-md ./"filePath"/"file.md" validate
 ```
 
 It will return on you terminal the links followed by its HTTP status:
@@ -76,7 +76,7 @@ Job done!
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/acn3to/link-md.git
+   git clone https://github.com/acn3to/hlink-md.git
    ```
 2. Install NPM packages
    ```sh
@@ -160,15 +160,15 @@ Distributed under the 'ISC' license. See `LICENSE` for more information.
 
 ## Contributing
 
-1. _fork_ the project (<https://github.com/acn3to/link-md>)
+1. _fork_ the project (<https://github.com/acn3to/hlink-md>)
 2. Create a _branch_ for your changes (`git checkout -b feature/fooBar`)
 3. Do the _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Create a new _Pull Request_
 
-[npm-image]: https://img.shields.io/npm/v/link-md-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/link-md-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/link-md-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-link-md-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-link-md-metrics
+[npm-image]: https://img.shields.io/npm/v/hlink-md-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/hlink-md-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/hlink-md-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-hlink-md-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-hlink-md-metrics
 [logo]: files/logo.png

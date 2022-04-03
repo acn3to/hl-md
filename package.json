@@ -1,5 +1,5 @@
 {
-  "name": "link-md",
+  "name": "hlink-md",
   "version": "1.0.0",
   "description": "A lib that reads a markdown file and looks for hyperlinks in it, returning a list of them and their respective HTTP status",
   "type": "module",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acn3to/link-md.git"
+    "url": "git+https://github.com/acn3to/hlink-md.git"
   },
   "keywords": [
     "markdown",
@@ -27,10 +27,10 @@
   "author": "Arnaldo Neto",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/acn3to/link-md/issues",
+    "url": "https://github.com/acn3to/hlink-md/issues",
     "email": "costanetoow@gmail.com"
   },
-  "homepage": "https://github.com/acn3to/link-md#readme",
+  "homepage": "https://github.com/acn3to/hlink-md#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.3"
