@@ -1,12 +1,12 @@
 {
-  "name": "lib-markdown",
+  "name": "link-md",
   "version": "1.0.0",
-  "description": "",
+  "description": "A lib that reads a markdown file and looks for hyperlinks in it, returning a list of them and their respective HTTP status",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest ./tests",
-    "cli": "node cli.js ./files/markdown-syntax.md"
+    "cli": "node cli.js"
   },
   "jest": {
     "transform": {
@@ -15,15 +15,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acn3to/lib-markdown.git"
+    "url": "git+https://github.com/acn3to/link-md.git"
   },
-  "keywords": [],
+  "keywords": [
+    "markdown",
+    "url",
+    "link",
+    "hyperlink",
+    "http"
+  ],
   "author": "Arnaldo Neto",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/acn3to/lib-markdown/issues"
+    "url": "https://github.com/acn3to/link-md/issues",
+    "email": "costanetoow@gmail.com"
   },
-  "homepage": "https://github.com/acn3to/lib-markdown#readme",
+  "homepage": "https://github.com/acn3to/link-md#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.3"
