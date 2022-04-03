@@ -1,5 +1,5 @@
-import chalk from "chalk";
 import fs from "fs";
+import chalk from "chalk";
 
 function getLink(text) {
   const regex = /\[([^\]]*)\]\((https?:\/\/[^$#\s].[^\s]*)\)/gm;
