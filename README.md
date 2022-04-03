@@ -21,7 +21,7 @@ npm init
 Installation is done using the npm install command:
 
 ```sh
-npm install -g hlink-md
+npm i hlink-md
 ```
 
 ## Demo
