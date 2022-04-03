@@ -1,6 +1,6 @@
 {
   "name": "hlink-md",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lib that reads a markdown file and looks for hyperlinks in it, returning a list of them and their respective HTTP status",
   "type": "module",
   "main": "index.js",
