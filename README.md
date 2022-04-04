@@ -21,7 +21,7 @@ npm init
 Installation is done using the npm install command:
 
 ```sh
-npm install hlink-md
+npm install hl-md
 ```
 
 ## Demo
@@ -43,7 +43,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, velit reiciendis
 And run:
 
 ```sh
-hlink-md ./"filePath"/"file.md"
+hl-md ./"filePath"/"file.md"
 ```
 
 It will return on you terminal:
@@ -59,7 +59,7 @@ Links list: [
 If you add "validate" at the end, like this:
 
 ```sh
-hlink-md ./"filePath"/"file.md" validate
+hl-md ./"filePath"/"file.md" validate
 ```
 
 It will return on you terminal the links followed by its HTTP status:
@@ -76,7 +76,7 @@ Job done!
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/acn3to/hlink-md.git
+   git clone https://github.com/acn3to/hl-md.git
    ```
 2. Install NPM packages
    ```sh
@@ -160,15 +160,15 @@ Distributed under the 'ISC' license. See `LICENSE` for more information.
 
 ## Contributing
 
-1. _fork_ the project (<https://github.com/acn3to/hlink-md>)
+1. _fork_ the project (<https://github.com/acn3to/hl-md>)
 2. Create a _branch_ for your changes (`git checkout -b feature/fooBar`)
 3. Do the _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Create a new _Pull Request_
 
-[npm-image]: https://img.shields.io/npm/v/hlink-md-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/hlink-md-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/hlink-md-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-hlink-md-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-hlink-md-metrics
+[npm-image]: https://img.shields.io/npm/v/hl-md-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/hl-md-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/hl-md-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-hl-md-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-hl-md-metrics
 [logo]: files/logo.png
