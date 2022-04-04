@@ -46,7 +46,7 @@ And run:
 hl-md ./"filePath"/"file.md"
 ```
 
-It will return on you terminal:
+It will return in you terminal:
 
 ```sh
 Job done!
@@ -62,7 +62,7 @@ If you add "validate" at the end, like this:
 hl-md ./"filePath"/"file.md" validate
 ```
 
-It will return on you terminal the links followed by its HTTP status:
+It will return in you terminal the links followed by its HTTP status:
 
 ```sh
 Job done!
