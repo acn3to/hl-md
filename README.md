@@ -162,7 +162,7 @@ Distributed under the 'ISC' license. See `LICENSE` for more information.
 
 1. _fork_ the project (<https://github.com/acn3to/hl-md>)
 2. Create a _branch_ for your changes (`git checkout -b feature/fooBar`)
-3. Do the _commit_ (`git commit -am 'Add some fooBar'`)
+3. Do the _commit_ (`git commit -m 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Create a new _Pull Request_
 
