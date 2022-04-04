@@ -21,7 +21,7 @@ npm init
 Installation is done using the npm install command:
 
 ```sh
-npm install hl-md
+npm install -g hl-md
 ```
 
 ## Demo
