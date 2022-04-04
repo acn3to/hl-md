@@ -26,7 +26,7 @@ npm install -g hl-md
 
 ## Demo
 
-For instance, if you have in your markdown file like this:
+For instance, if you have in your markdown file something like this:
 
 ```markdown
 ## Title example
