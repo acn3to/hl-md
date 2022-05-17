@@ -2,11 +2,15 @@
 
 # Markdown Link Validator
 
-> A lib that reads a markdown file and looks for hyperlinks in it, returning a list of them and their respective HTTP status.
+>A lib that allows to read and analyze files in markdown format, and then check whether or not there are links. Return a list containing each link found and validate the HTTP status of them.
 
 > [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url][![Downloads Stats][npm-downloads]][npm-url]
 
-Lib that allows to read and analyze files in markdown format, and then check whether or not there are links. Return a list containing each link found and validate the HTTP status of them.
+
+## Built with
+
+* [Node.js](https://nodejs.org/en/)
+* [Jest](https://jestjs.io/)
 
 ## Install
 
@@ -149,7 +153,7 @@ Job done!
 ├── index.js
 ├── package.json
 ├── package-lock.json
-├── README.md
+└── README.md
 ```
 
 ## Meta
