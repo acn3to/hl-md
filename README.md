@@ -4,8 +4,6 @@
 
 >A lib that allows to read and analyze files in markdown format, and then check whether or not there are links. Return a list containing each link found and validate the HTTP status of them.
 
-> [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url][![Downloads Stats][npm-downloads]][npm-url]
-
 
 ## Built with
 
